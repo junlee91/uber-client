@@ -17,4 +17,5 @@
   - [ ] Settings
   - [ ] Saved Places
   - [ ] Add Place
+  - [ ] Find Address
   - [ ] Ride History
