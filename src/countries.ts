@@ -67,7 +67,7 @@ const countries = [
   { name: "Burundi", dial_code: "+257", code: "BI", flag: "🇧🇮" },
   { name: "Cambodia", dial_code: "+855", code: "KH", flag: "🇰🇭" },
   { name: "Cameroon", dial_code: "+237", code: "CM", flag: "🇨🇲" },
-  { name: "Canada", dial_code: "+1", code: "CA", flag: "🇨🇦" },
+  { name: "Canada", dial_code: "+01", code: "CA", flag: "🇨🇦" },
   { name: "Cape Verde", dial_code: "+238", code: "CV", flag: "🇨🇻" },
   {
     name: "Cayman Islands",
