@@ -34,8 +34,17 @@ class PhoneLoginContainer extends React.Component<
         }}
         onCompleted={(data) => {
           const { StartPhoneVerfification } = data;
+          const phone = `${countryCode}${phoneNumber}`;
           if (StartPhoneVerfification.ok) {
-            // todo: verify screen
+            toast.success("SMS Sent! Redirecting...");
+            setTimeout(() => {
+              history.push({
+                pathname: "/verify-phone",
+                state: {
+                  phone
+                }
+              });
+            }, 2000)
             return;
           } else {
             toast.error(StartPhoneVerfification.error);
@@ -48,13 +57,7 @@ class PhoneLoginContainer extends React.Component<
             const phone = `${countryCode}${phoneNumber}`;
             const isValid = /^\+[1-9]{1}[0-9]{7,11}$/.test(phone);
             if (isValid) {
-              // mutation();
-              history.push({
-                pathname: "/verify-phone",
-                state: {
-                  phone
-                }
-              });
+              mutation();
             } else {
               toast.error("Please write a valid phone number");
             }
