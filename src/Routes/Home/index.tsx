@@ -1,5 +1,5 @@
 import React from "react";
 
-const R = () => <span>Fake One</span>;
+const R = () => <span>HOME</span>;
 
 export default R;

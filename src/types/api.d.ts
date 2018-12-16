@@ -34,7 +34,7 @@ export interface facebookConnect_FacebookConnect {
 }
 
 export interface facebookConnect {
-  FacebookConnect: facebookConnect_FacebookConnect | null;
+  FacebookConnect: facebookConnect_FacebookConnect;
 }
 
 export interface facebookConnectVariables {
