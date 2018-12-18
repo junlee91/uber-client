@@ -38,7 +38,7 @@ const EditAccountPresenter: React.SFC<IProps> = ({
 }) => (
   <Container>
     <Helmet>
-      <title>Edit Account | Number</title>
+      <title>Edit Account | Uber</title>
     </Helmet>
     <Header title={"Edit Account"} backTo={"/"} />
     <ExtendedForm submitFn={onSubmit}>
@@ -47,18 +47,21 @@ const EditAccountPresenter: React.SFC<IProps> = ({
         type={"text"}
         value={firstName}
         placeholder={"First name"}
+        name={"firstName"}
       />
       <ExtendedInput
         onChange={onInputChange}
         type={"text"}
         value={lastName}
         placeholder={"Last name"}
+        name={"lastName"}
       />
       <ExtendedInput
         onChange={onInputChange}
         type={"email"}
         value={email}
         placeholder={"Email"}
+        name={"email"}
       />
       <Button onClick={null} value={loading ? "Loading" : "Update"} />
     </ExtendedForm>
