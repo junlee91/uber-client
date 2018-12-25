@@ -7,3 +7,9 @@ export const LOG_USER_IN = gql`
 `;
 
 // @client directive means, you don't let it happen in the API only for client side (internal)
+
+export const LOG_USER_OUT = gql`
+  mutation logUserOut {
+    logUserOut @client
+  }
+`;
