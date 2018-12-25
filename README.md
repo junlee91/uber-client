@@ -13,8 +13,8 @@
 
   - [ ] Home
   - [ ] Ride
-  - [ ] Edit Account
-  - [ ] Settings
+  - [x] Edit Account
+  - [x] Settings
   - [ ] Saved Places
   - [ ] Add Place
   - [ ] Find Address
