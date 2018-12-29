@@ -1,5 +1,5 @@
 import React from "react";
-import { MutationFn } from 'react-apollo';
+import { MutationFn } from "react-apollo";
 import Helmet from "react-helmet";
 import { Link } from "react-router-dom";
 import Button from "../../Components/Button";
@@ -27,7 +27,8 @@ interface IProps {
   name: string;
   onInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   loading: boolean;
-  onSubmit: MutationFn
+  onSubmit: MutationFn;
+  pickedAddress: boolean;
 }
 
 const AddPlacePresenter: React.SFC<IProps> = ({
@@ -35,7 +36,8 @@ const AddPlacePresenter: React.SFC<IProps> = ({
   address,
   name,
   loading,
-  onSubmit
+  onSubmit,
+  pickedAddress
 }) => (
   <React.Fragment>
     <Helmet>
@@ -59,7 +61,12 @@ const AddPlacePresenter: React.SFC<IProps> = ({
           name={"address"}
         />
         <ExtendedLink to={"/find-address"}>Pick place from map</ExtendedLink>
-        <Button onClick={null} value={loading ? "Adding place" : "Add Place"} />
+        {pickedAddress && (
+          <Button
+            onClick={null}
+            value={loading ? "Adding place" : "Add Place"}
+          />
+        )}
       </Form>
     </Container>
   </React.Fragment>
