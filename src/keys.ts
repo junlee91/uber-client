@@ -1,3 +1,3 @@
-export const MAPS_KEY = "AIzaSyBPklGdyVwLvNxlZrCMC4kGs2z0D9CaDAk";
+export const MAPS_KEY = process.env.MAPS_KEY;
 
-export const GEO_KEY = "AIzaSyBPklGdyVwLvNxlZrCMC4kGs2z0D9CaDAk";
+export const GEO_KEY = process.env.GEO_KEY;
