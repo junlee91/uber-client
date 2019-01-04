@@ -6,7 +6,7 @@ import AddressBar from "../../Components/AddressBar";
 import Button from "../../Components/Button";
 import Menu from "../../Components/Menu";
 import styled from "../../typed-components";
-import { userProfile } from "../../types/api";
+import { getRides, userProfile } from "../../types/api";
 
 const Container = styled.div``;
 
@@ -58,6 +58,7 @@ interface IProps {
   requestRideFn?: MutationFn;
   price?: string;
   data?: userProfile;
+  nearbyRide?: getRides;
 }
 
 const HomePresenter: React.SFC<IProps> = ({
