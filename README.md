@@ -11,11 +11,11 @@
 
 ### Logged In:
 
-  - [ ] Home
-  - [ ] Ride
+  - [x] Home
+  - [x] Ride
   - [x] Edit Account
   - [x] Settings
-  - [ ] Saved Places
-  - [ ] Add Place
-  - [ ] Find Address
+  - [x] Saved Places
+  - [x] Add Place
+  - [x] Find Address
   - [ ] Ride History
